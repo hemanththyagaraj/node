@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../fullstackopen-backend",
-    "deploy": "npm run build && npm start"
+    "build": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../fullstackopen-backend"
   },
   "author": "",
   "license": "ISC",
