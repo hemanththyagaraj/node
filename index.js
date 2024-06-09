@@ -26,11 +26,10 @@ let notes = [
     },
 ];
 
-app.get("/", (req, res) => {
-    res.send("<h1>Hello World</h1>")
-})
 
-app.get("/notes", (req, res) => {
+app.use(express.static("dist"))
+
+app.get("/api/notes", (req, res) => {
     return res.status(200).json(notes)
 })
 

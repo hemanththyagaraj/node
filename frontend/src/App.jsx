@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
@@ -9,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const res = await fetch("http://localhost:8000/notes");
+        const res = await fetch("/api/notes");
         const notes = await res.json();
         console.log(notes);
       } catch (error) {
